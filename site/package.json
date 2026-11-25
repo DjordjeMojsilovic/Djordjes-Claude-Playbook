@@ -1,0 +1,12 @@
+{
+  "name": "djordjes-claude-setup-site",
+  "private": true,
+  "type": "module",
+  "description": "Builds the course website from the repo's markdown into site/dist.",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "dependencies": {
+    "marked": "18.3.0"
+  }
+}
