@@ -1,6 +1,10 @@
+<p align="center"><img src="docs/banner.jpg" alt="How I actually work with Claude. Snow-covered alpine peaks above a sea of clouds." width="100%"></p>
+
 # Djordje's Claude Setup
 
-How I actually work with Claude, as a course you can follow and a setup you can copy.
+How I actually work with Claude, as a course you can follow and a setup you can copy. It also reads as a website: [djordjemojsilovic.github.io/Djordjes-Claude-Setup](https://djordjemojsilovic.github.io/Djordjes-Claude-Setup/).
+
+**[Course](course/00-start-here.md)** · **[Setup](setup/README.md)** · **[Skills](setup/skills.md)** · **[Credits](CREDITS.md)**
 
 I'm Djordje. I'm a SWE apprentice at Google, I'm doing the BMS (the Swiss vocational baccalaureate) alongside it, and I co-founded [Avtoris](https://www.avtoris.studio). Most of what I build, I build with Claude: websites for clients, a Windows app, learning modules for school, and this repo.
 
@@ -65,6 +69,8 @@ course/      13 modules
 setup/       my CLAUDE.md, settings, curated skills and plugins, install scripts
 templates/   my agency pipeline (router + 9 agents) and a starter for new projects
 skills/      the skills I wrote myself
+site/        builds the website from these files (GitHub Pages)
+docs/        the banner image
 CREDITS.md   every skill and plugin I link to, with author and license
 ```
 
@@ -76,6 +82,6 @@ CREDITS.md   every skill and plugin I link to, with author and license
 
 ## Credits and license
 
-All third-party skills and plugins are listed in [CREDITS.md](CREDITS.md) with their authors and licenses. My own texts, skills and templates are under the [MIT license](LICENSE).
+All third-party skills and plugins are listed in [CREDITS.md](CREDITS.md) with their authors and licenses. The mountain photo in the banner and on the website is by [Gabriel Garcia Marengo](https://unsplash.com/@gabrielgm?utm_source=djordjes_claude_setup&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=djordjes_claude_setup&utm_medium=referral). My own texts, skills and templates are under the [MIT license](LICENSE).
 
 If this helps you work better with Claude, a star helps me. If you share your own setup, send me the link.

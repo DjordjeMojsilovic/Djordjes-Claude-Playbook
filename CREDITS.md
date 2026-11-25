@@ -52,6 +52,13 @@ Both are real, popular projects. They're on my never list because of how they wo
 |---|---|---|
 | [skills/decision-toolkit](skills/decision-toolkit/SKILL.md) | [glebis/claude-skills](https://github.com/glebis/claude-skills), Copyright (c) 2025-2026 Gleb Kalinin | MIT, see [LICENSE-UPSTREAM](skills/decision-toolkit/LICENSE-UPSTREAM) |
 
+## Website
+
+- Photo: [Gabriel Garcia Marengo](https://unsplash.com/@gabrielgm?utm_source=djordjes_claude_setup&utm_medium=referral) on [Unsplash](https://unsplash.com/photos/qJvpykJ5SKs?utm_source=djordjes_claude_setup&utm_medium=referral), under the [Unsplash License](https://unsplash.com/license). Used in [`docs/banner.jpg`](docs/banner.jpg) and in `site/assets/`.
+- Font: [Inter Tight](https://fonts.google.com/specimen/Inter+Tight), SIL Open Font License, loaded from Google Fonts.
+- Motion on the home page: [GSAP](https://gsap.com) with ScrollTrigger, loaded from cdnjs under GSAP's standard license.
+- Markdown to HTML: [marked](https://github.com/markedjs/marked) (MIT), at build time only.
+
 ## Inspiration and references
 
 - [garrytan/gstack](https://github.com/garrytan/gstack): Garry Tan's published Claude Code setup (MIT). It's the reason I'm sharing mine.
