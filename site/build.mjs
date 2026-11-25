@@ -105,8 +105,10 @@ const bg = (out) => `<div class="bg" aria-hidden="true">
 </div>`;
 
 const NAV_LINKS = [['Course', 'course/00-start-here/'], ['Setup', 'setup/'], ['Skills', 'setup/skills/']];
-const nav = (out, current = '') => {
-  const links = NAV_LINKS.map(([label, to]) => `<a href="${rel(out, to)}"${label === current ? ' aria-current="page"' : ''}>${label}</a>`).join('\n    ');
+// The nav marks the link whose section the page belongs to, by path: course/… is Course, setup/skills/ is Skills, other setup/… is Setup.
+const section = (out) => (out.startsWith('course/') ? 'course/00-start-here/' : out === 'setup/skills/' ? 'setup/skills/' : out.startsWith('setup/') ? 'setup/' : '');
+const nav = (out) => {
+  const links = NAV_LINKS.map(([label, to]) => `<a href="${rel(out, to)}"${to === section(out) ? ' aria-current="page"' : ''}>${label}</a>`).join('\n    ');
   return `<header class="nav" data-nav>
   <div class="nav-veil" aria-hidden="true">
     <span class="nav-blur" style="--b: 2px; --to: 100%"></span>
