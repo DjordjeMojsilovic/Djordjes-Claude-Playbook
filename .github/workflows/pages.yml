@@ -1,5 +1,6 @@
 # Builds the course website from the markdown in this repo and publishes it on GitHub Pages.
-# It only deploys while the repo is public, so nothing goes online before the repo itself does.
+# The build runs on every push, so a broken link fails early. The deploy only runs while the repo is public,
+# so nothing goes online before the repo itself does.
 # The `public` trigger fires the moment the repo is switched to public, so the first deploy needs no extra step.
 name: Website
 
@@ -20,7 +21,6 @@ concurrency:
 
 jobs:
   build:
-    if: ${{ !github.event.repository.private }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -40,6 +40,7 @@ jobs:
 
   deploy:
     needs: build
+    if: ${{ !github.event.repository.private }}
     runs-on: ubuntu-latest
     environment:
       name: github-pages
