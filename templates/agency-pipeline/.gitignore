@@ -1,0 +1,22 @@
+# Merge these lines into your project's .gitignore.
+
+# Environment: NEVER commit
+.env
+.env.local
+.env.*.local
+
+# Claude Code runtime state. protect.mjs deliberately exempts these files:
+# they are scratch notes of the running order, not rules.
+.claude/.mode
+.claude/.dirty
+.claude/.agentlog
+.claude/.loop-*
+.claude/.besitz
+.claude/.idle-*
+.claude/.fehlend-*
+.claude/.schema-cache.json
+.claude/settings.local.json
+
+# Findings screenshots (often large, they belong to the client).
+# Report and patches ARE versioned, only the images are not.
+befund/**/screenshots/
