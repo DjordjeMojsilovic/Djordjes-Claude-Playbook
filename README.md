@@ -1,8 +1,8 @@
 <p align="center"><img src="docs/banner.jpg" alt="How I actually work with Claude. Snow-covered alpine peaks above a sea of clouds." width="100%"></p>
 
-# Djordje's Claude Setup
+# Djordje's Claude Playbook
 
-How I actually work with Claude, as a course you can follow and a setup you can copy. It also reads as a website: [djordjemojsilovic.github.io/Djordjes-Claude-Setup](https://djordjemojsilovic.github.io/Djordjes-Claude-Setup/).
+How I actually work with Claude, as a course you can follow and a setup you can copy. It also reads as a website: [djordjemojsilovic.github.io/Djordjes-Claude-Playbook](https://djordjemojsilovic.github.io/Djordjes-Claude-Playbook/).
 
 **[Course](course/00-start-here.md)** · **[Setup](setup/README.md)** · **[Skills](setup/skills.md)** · **[Credits](CREDITS.md)**
 

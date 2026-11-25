@@ -1,5 +1,5 @@
 {
-  "name": "djordjes-claude-setup-site",
+  "name": "djordjes-claude-playbook-site",
   "private": true,
   "type": "module",
   "description": "Builds the course website from the repo's markdown into site/dist.",

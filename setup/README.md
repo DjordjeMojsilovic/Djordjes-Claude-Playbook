@@ -21,8 +21,8 @@ Everything here is a starting point. Take what fits, leave the rest. [Module 12]
 - **git**, and a clone of this repo:
 
 ```
-git clone https://github.com/DjordjeMojsilovic/Djordjes-Claude-Setup.git
-cd Djordjes-Claude-Setup
+git clone https://github.com/DjordjeMojsilovic/Djordjes-Claude-Playbook.git
+cd Djordjes-Claude-Playbook
 ```
 
 All commands below run from the repo's root folder.
