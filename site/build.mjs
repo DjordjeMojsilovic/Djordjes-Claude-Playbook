@@ -1,5 +1,5 @@
 // Builds the course website into site/dist from the markdown in this repo. Run: cd site && npm ci && npm run build
-// Every link is relative, so the site works at any base path (GitHub Pages serves it under /Djordjes-Claude-Setup/).
+// Every link is relative, so the site works at any base path (GitHub Pages serves it under /Djordjes-Claude-Playbook/).
 import { readFileSync, writeFileSync, mkdirSync, rmSync, cpSync, readdirSync } from 'node:fs';
 import { dirname, join, posix } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -10,7 +10,7 @@ const read = (path) => readFileSync(path, 'utf8').replace(/\r\n/g, '\n');
 const SITE = dirname(fileURLToPath(import.meta.url));
 const REPO = join(SITE, '..');
 const DIST = join(SITE, 'dist');
-const GITHUB = 'https://github.com/DjordjeMojsilovic/Djordjes-Claude-Setup';
+const GITHUB = 'https://github.com/DjordjeMojsilovic/Djordjes-Claude-Playbook';
 const UTM = '?utm_source=djordjes_claude_setup&amp;utm_medium=referral';
 
 // The modules, in order. The one-line descriptions are shared by the home page list and each module's header.
@@ -117,7 +117,7 @@ const nav = (out) => {
     <span class="nav-blur" style="--b: 16px; --to: 42%"></span>
     <span class="nav-tint"></span>
   </div>
-  <a class="mark" href="${rel(out, '')}">Djordje’s Claude Setup</a>
+  <a class="mark" href="${rel(out, '')}">Djordje’s Claude Playbook</a>
   <nav class="links" aria-label="Main">
     ${links}
     <a href="${GITHUB}" rel="noopener">GitHub</a>
@@ -137,7 +137,7 @@ const nav = (out) => {
 };
 
 const footer = (out) => `<footer class="panel foot">
-  <p class="sign">Djordje’s Claude Setup</p>
+  <p class="sign">Djordje’s Claude Playbook</p>
   <div class="foot-cols">
     <nav class="foot-nav" aria-label="Footer">
       <a href="${rel(out, 'course/00-start-here/')}">Course</a>
@@ -156,7 +156,7 @@ const scripts = (out) => `<script src="${rel(out, 'assets/site.js')}" defer></sc
 // ---------- a reading page ----------
 function page({ out, title, kicker, lede, body, current, toc, pager }) {
   const tocList = toc ? `<ol class="toc-list">${modules.map((m) => `<li><a href="${rel(out, m.out)}"${m.out === out ? ' aria-current="page"' : ''}><span class="num">${m.num}</span>${esc(m.title)}</a></li>`).join('')}</ol>` : '';
-  return `${head(out, `${title} — Djordje’s Claude Setup`, lede || title)}
+  return `${head(out, `${title} — Djordje’s Claude Playbook`, lede || title)}
 </head>
 <body class="doc">
 ${bg(out)}
@@ -192,7 +192,7 @@ function home() {
   const out = '';
   const mods = modules.map((m) => `<li><a href="${m.out}"><span class="num">${m.num}</span><span class="ttl">${esc(m.title)}</span><span class="desc">${esc(m.desc)}</span></a></li>`).join('\n        ');
   const tools = render(read(join(REPO, 'README.md')).match(/## What I use most, and where\n+((?:\|.*\n)+)/)[1], 'README.md', out);
-  return `${head(out, 'Djordje’s Claude Setup', 'How I actually work with Claude. A free course and the exact setup I use, written down after over 1,000 sessions.')}
+  return `${head(out, 'Djordje’s Claude Playbook', 'How I actually work with Claude. A free course and the exact setup I use, written down after over 1,000 sessions.')}
 <script>
   // The scroll story only runs when the visitor allows motion, and is dropped again unless it starts within 3 s.
   if (matchMedia('(prefers-reduced-motion: no-preference)').matches) {
